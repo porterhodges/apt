@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $(dirname "$0") || exit 1 
+cd $(dirname "$0")
 
 # Set variable(s)
 FTPARCHIVE='apt-ftparchive'
@@ -26,7 +26,7 @@ for dist in main testing; do
 			continue;
 		fi
 		mkdir -p dists/${dist}/${comp}/${binary}
-		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.gz,.bz2,.zst},Release{,.gpg},InRelease}
+		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.gz,.bz2,.zst,.lzma,.lz4},Release{,.gpg},InRelease}
 
 		$FTPARCHIVE packages pool/${comp}/${dist} > \
 			dists/${dist}/${comp}/${binary}/Packages 2>/dev/null
@@ -49,7 +49,7 @@ for dist in main testing; do
 		$FTPARCHIVE release -c config/${arch}-basic.conf dists/${dist}/${comp}/${binary} > dists/${dist}/${comp}/${binary}/Release 2>/dev/null
 	done
 
-	$FTPARCHIVE release -c config/$(echo "${dist}" | cut -f1 -d '/').conf dists/${dist} > dists/${dist}/Release 2>/dev/null
+	$FTPARCHIVE release -c config/${arch}-basic.conf dists/${dist} > dists/${dist}/Release 2>/dev/null
 
 	gpg -vabs -u $GPG_KEY -o dists/${dist}/Release.gpg dists/${dist}/Release
 	gpg --clear-sign -u $GPG_KEY -o dists/${dist}/InRelease dists/${dist}/Release
