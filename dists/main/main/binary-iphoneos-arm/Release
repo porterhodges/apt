@@ -1,7 +1,7 @@
 Architectures: iphoneos-arm
 Codename: ph
 Components: main
-Date: Sun, 25 Sep 2022 08:42:14 +0000
+Date: Sun, 25 Sep 2022 08:45:34 +0000
 Description: Porter Hodges' iOS APT Repository
 Label: Porter Hodges
 Origin: Porter Hodges
@@ -10,36 +10,36 @@ Version: 1.0a
 MD5Sum:
  02680743acfc96927043f6f23d8d1b56              689 Packages
  dd18fac00707e8ea00364f88223ef845              486 Packages.bz2
- 65e4a7804df0d2074381374dcca01fcd              457 Packages.gz
+ 4cc7f9372c79bf905062cfeac8b04e10              457 Packages.gz
  270294ac9c4231cad0183f7b4e9a683b              605 Packages.lz4
  391ad71e043c042329522a96de153705              489 Packages.lzma
  dd6d52fe5773af879e67587b19c96f0b              536 Packages.xz
  72fa6e53719da1c2d81754831d03a46a              451 Packages.zst
- cf2122484c049f3969a25362ec45d47d              214 Release
+ 082c3ea35c6aa1a426712ce844fa11f1              214 Release
 SHA1:
  f3476a8b6d1a596c80bb28bfef5dc049d2eacec6              689 Packages
  7af91d4ca75b462960ff4121c2d01050b26c712c              486 Packages.bz2
- c38ff05b86539797d4f751964825c495125bef99              457 Packages.gz
+ c68d2fcfa74c564a8dc845ea4652b62635e8d2a1              457 Packages.gz
  111a82691a7f9b1335613351aa3f7ae1174f85c7              605 Packages.lz4
  6183ac18c4298126d770440c1334c309742fce76              489 Packages.lzma
  56b0ae14b4826ddd7ef76ec1fa1c7ee222480ccd              536 Packages.xz
  377dfc93fee0adb95f6620c419ea63d9b7237ed7              451 Packages.zst
- 87b9b464ae01118f692d40f83018a54d313173a6              214 Release
+ b7adb32dcb618c291e7ec73446ec7d0f887a9e48              214 Release
 SHA256:
  3c5ed64132b7f84c6209d44e6393206d11428786eb0f057ebf753c0acca906a9              689 Packages
  c7cb5d4e16b37dac36261ebdb2453cedc15cf585d989bc2a40b0443464fc4dda              486 Packages.bz2
- 8c66e1dc0d33a61cf0794a63922cc8bd4c9a78c8917e9170d2de0a622b1e2aeb              457 Packages.gz
+ cda0085dad08829711fe0a65bca530d64716b7b68b559ed09940830a8edf9562              457 Packages.gz
  9c885983e9eeda7d947a7235b0fd7cf576842e0d0a86ed5eb233f660970e047c              605 Packages.lz4
  c145aad3cd1b160c16dc1e1b7a0bafafe446d630cf8c4cab602d2f9c283c3b69              489 Packages.lzma
  41329fee1a09d2c2aba4b1c4e619125bd91a2bb51e8523859361ed2c17e4e53b              536 Packages.xz
  7326b507cd738ffd335c373d77fb45f8a80338ae2c52d8ecc199c901b713bf36              451 Packages.zst
- eb0a062a6f82da7bce3045c33de85786d81fdcf9a85214a458337116be5660b9              214 Release
+ 10e7e1048222a1a114980ee331b28936b669d7bdc92f7a4f9489a797f0de8f13              214 Release
 SHA512:
  77c8f3a7b638ffa29f9a40da69afb5619ae0ed25d5419f352b286ad1d3ed8b21dbf0a89605697f274681ec8f246dac2cbba0ccdf9e112e0e53658ac433d35f27              689 Packages
  9f97eae435da550e64455ce87f990aa3e461abc0c0fcc33aacefd0490c15508591416e981cf0b19d5664fcc40e9b5c24721b2c58b284d26f40ecfa491645861a              486 Packages.bz2
- 27048af174a8d52f82972e6ddcc9182342249aa37cc53369280fc7d0d9b253fea158f54d0736077d59bfe47c7103e1acafbbcc450a5dafedcaccc65707f279f1              457 Packages.gz
+ 2172b559d40309fbaa803a139eaeb76eb9577506dc6bbb9e418df51ca74c936cba40125d9bfd9e041669d132bd283466e54c0a495fa9acc06a6944aba3bb5ef9              457 Packages.gz
  0b4bf8684eadf7e0836b8df0c9910ff08032a4e73333e6d2cbcf33873a7258c93490ff5870ac337fcf9c25daae1494ad5eb8621bb5a2308cd59d6bcb34c6eb56              605 Packages.lz4
  8a74fdc125e09bf06da9bb1e05ff7423e572f14d0fea7f2d33adfe3589b80c338bfc460f3299de8206073f640766a238420c5ec92df7857959f7706922f45392              489 Packages.lzma
  ececa964d3790c866db4e6a2241e9494eb37aab9e38bb7be04e880c6c05b945b0af5de7d9d6da85d487588d171da40e4cc12259fbb7865c621ae4a0c5dc59c86              536 Packages.xz
  7cd5cd7da2c57ae0d83f3d8304e6e45295d94d480f569ba3bf921a693e11dd1327dc4a71bc2042932d26dccf3edf25ed36e95e11f881463d146bcba1e8ad7b02              451 Packages.zst
- ff730b227921c68b2405c88117bc9a3819c1f4bc45e2c094e309877d77907f44a1fb951e684131404949b6ae23cb583853d4bec6c97a3b41705b21871efab29b              214 Release
+ bb22c51cfa2dc8266561385c760c5fd60e49bdb94f4f43967f0e80131035b617b9723bd32df9b6f52683bec610a05734353d4ea4da2c79b975b6135e503acc9c              214 Release

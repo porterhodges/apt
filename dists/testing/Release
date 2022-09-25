@@ -1,77 +1,77 @@
 Architectures: iphoneos-arm64
 Codename: ph
 Components: testing
-Date: Sun, 25 Sep 2022 08:42:14 +0000
+Date: Sun, 25 Sep 2022 08:45:34 +0000
 Description: Porter Hodges' iOS APT Repository
 Label: Porter Hodges
 Origin: Porter Hodges
 Suite: stable
 Version: 1.0a
 MD5Sum:
- 7bebaa61ade010e523402785736c133b              219 Release
+ 0d287e671b35d82cc82a54089d5bd95a              219 Release
  c0773cb26078ffbaee1c1cb1d411fad0               78 testing/Contents-iphoneos-arm64
  bf982d8c2e330210c738a267010e2f05               96 testing/Contents-iphoneos-arm64.bz2
- feb3260e8276f3a4a437f7ead2368b63              106 testing/Contents-iphoneos-arm64.gz
+ 27e5fbd28747210832997c1a3c4ecc44              106 testing/Contents-iphoneos-arm64.gz
  d2004565e44b14153f3801a47e1d9bbe               89 testing/Contents-iphoneos-arm64.lz4
  3b185c3fad748811d0e43865cc333b04               84 testing/Contents-iphoneos-arm64.lzma
  e0288c6c63aaab24e213840dc5a45f40              128 testing/Contents-iphoneos-arm64.xz
  dc67a5542641b556c26598df1955a236               85 testing/Contents-iphoneos-arm64.zst
  205d81522c5a2f22ae85fa92a2a58eba              695 testing/binary-iphoneos-arm64/Packages
  5f600e867aea93604583b72d8d296364              497 testing/binary-iphoneos-arm64/Packages.bz2
- 456f24ca193cd63ab9910e7c0fb3ca69              460 testing/binary-iphoneos-arm64/Packages.gz
+ 97421f32f9d4777959a00000b4ef146d              460 testing/binary-iphoneos-arm64/Packages.gz
  08d677a8dfaae412205190c4f076157b              608 testing/binary-iphoneos-arm64/Packages.lz4
  52f15c4eb765932a6fcce8dd00949572              489 testing/binary-iphoneos-arm64/Packages.lzma
  fcc0202db3e308ba509766a92741cbf9              536 testing/binary-iphoneos-arm64/Packages.xz
  5dad6cee787f5c33d671cda8650f44fc              453 testing/binary-iphoneos-arm64/Packages.zst
- 8259db89276ae8504397b92c650af529             3345 testing/binary-iphoneos-arm64/Release
+ 8de0d8e4c0a4bd4a40368836e9fdc0af             3345 testing/binary-iphoneos-arm64/Release
 SHA1:
- 54f4c9958af720b6209b776c366c90b00d381b2c              219 Release
+ c256c37ab69874a00cc9964386098d006c963ef3              219 Release
  4f7835547250d0e8a6c6053fe4d56a5fab750241               78 testing/Contents-iphoneos-arm64
  639a782394567bfb3b2ebc1ee36af7c2289abdb8               96 testing/Contents-iphoneos-arm64.bz2
- 296148519dd737819d64cfbf36037e4597103b11              106 testing/Contents-iphoneos-arm64.gz
+ 93d51c53cfafea481a2c28ae71d619e0325714de              106 testing/Contents-iphoneos-arm64.gz
  7aea6ff2eca2ac66b652902b051cb796c6833cdd               89 testing/Contents-iphoneos-arm64.lz4
  30da4526e40cbbf3cf8b1c18aad4dac3304b7e64               84 testing/Contents-iphoneos-arm64.lzma
  b40da31466903d490976c0dc65e1789d923356cc              128 testing/Contents-iphoneos-arm64.xz
  9e1562dc68b926f8c002ef02de34b0fe89f8558d               85 testing/Contents-iphoneos-arm64.zst
  27f93c386b2ccb5a053d1f916e2e1fda80bc7eec              695 testing/binary-iphoneos-arm64/Packages
  a5e0aab9b43b6991df29b8a9e87dca01450df4d7              497 testing/binary-iphoneos-arm64/Packages.bz2
- 40b48f63581328ef3dd7f08737efd04760349b9e              460 testing/binary-iphoneos-arm64/Packages.gz
+ de4d93bc7a70f9c3a1278628ac665bd2ee0a4c4b              460 testing/binary-iphoneos-arm64/Packages.gz
  962e2c32a1048e3be69d986b28728259b0d99925              608 testing/binary-iphoneos-arm64/Packages.lz4
  ef690b6dd8279404a57b462395845d832a5ad1ff              489 testing/binary-iphoneos-arm64/Packages.lzma
  1b0e38160a88bfb812ccf16a3f16dd57ef7a8765              536 testing/binary-iphoneos-arm64/Packages.xz
  5af62092987dde7790806c25a079dc07e5f7caef              453 testing/binary-iphoneos-arm64/Packages.zst
- 1842d8aece49a736846646f0298f05e126647c33             3345 testing/binary-iphoneos-arm64/Release
+ 588203656e6193a0240a294e4a91f6c7b248621f             3345 testing/binary-iphoneos-arm64/Release
 SHA256:
- dc16105fb928fbc8686b572b536388bd7574e3097357867bb538dfc9fe96c331              219 Release
+ 2e4f42fbe67056a1621b5d9e3ecf75d4a44765eb8d6c99430eef2b19afdb2e02              219 Release
  844095e0ef7ff951cf7a5e83e5e3c255924f15deaa684b2cfcee3e206d73cb72               78 testing/Contents-iphoneos-arm64
  0aea3c8fd1c50aba1c5452b6e135491b04c0060ec53a4bd53f106d26aa1bd83c               96 testing/Contents-iphoneos-arm64.bz2
- 8f93c79d16f1c65fda4e2b6c52019cb29aa1012e28c4dd2749f0debbe8dddceb              106 testing/Contents-iphoneos-arm64.gz
+ 830a83023d1cbdbeddf1cad4d9bdaaed64ed2c2492158b8c0cdf68b2e0fab7c1              106 testing/Contents-iphoneos-arm64.gz
  420b58f271968876848fa6588c24920ff606ce2d69ecf9ff3582e9b8ca4703cb               89 testing/Contents-iphoneos-arm64.lz4
  34124a14b6ba1706ba777c971600552981bc017c7cde8ff80024927dfeb491fa               84 testing/Contents-iphoneos-arm64.lzma
  349ffa1d304f260563824ca7ff9e26527e049149240e9ae99e87ba25708fd350              128 testing/Contents-iphoneos-arm64.xz
  67c84bbb5fbb38d12e81f9890751047f5c369502702625bfd22a09d83ea405da               85 testing/Contents-iphoneos-arm64.zst
  9d28847f1c4179a74c8b9d0d9976b161e3981b29783b0658724f1fe2ea61b155              695 testing/binary-iphoneos-arm64/Packages
  0e768bc75a10b2d3b473cebf593784695de9dfe651788a532698e90ef4521f41              497 testing/binary-iphoneos-arm64/Packages.bz2
- 0fac60dc3a998c67f306a072f72977d491d2d107910d69608a5b84fbc380fe4e              460 testing/binary-iphoneos-arm64/Packages.gz
+ b0e7c638d086efdf7030f68fdbba039fa50f98f6e4fab6ecf1e075e9272e341c              460 testing/binary-iphoneos-arm64/Packages.gz
  f1e648ada52a20d964d0232830e85a8b138f60c6df4c80df55c8b7aa5d676be0              608 testing/binary-iphoneos-arm64/Packages.lz4
  a59602c2888b4160ed4b5b15e68aca3816a297587db59113bcc2905b41e0791f              489 testing/binary-iphoneos-arm64/Packages.lzma
  0ea711c816d2b2b043b75290426db705132c4e380f2249e581f76876d7921861              536 testing/binary-iphoneos-arm64/Packages.xz
  db453f03b0d68373c049198cb6e4765f0f6b1c26349ef14123fad899d37cc811              453 testing/binary-iphoneos-arm64/Packages.zst
- a93c5e5965b0fc7ad77cdaa05f21d7b3e1be75ec2a98d4fee7c91ce16d379a63             3345 testing/binary-iphoneos-arm64/Release
+ b18a321737617b0b4d95088f16aec6868745d5e8e40907d5ded84e204a988f17             3345 testing/binary-iphoneos-arm64/Release
 SHA512:
- 7707f76271bfd5e19fb91f0b1646ba26b89a7735f53f6430a74b64779706d39627da3dd0045e45dadeaa839c27fa941b9a8ab6908b2dc1091f47838823495e2b              219 Release
+ 5391d424763b8a9acfdb507366f346525baf718f9dca083e1f5bcdddf04c6b9ef5809ea0cbdee88e41c956e8e0c1ef84d895f90f8141725e2cd7fe015c3b0ef3              219 Release
  b63fcce914bf06deac21eeaa0ed6d9bf5d779770ad2888d0b9d67a8875ce87285fc773bf376e113d5f9ef1d8e449f30707318272166d3785758c475c49a0ff58               78 testing/Contents-iphoneos-arm64
  5297e6832256cd183b35f94d80e7e9a585d706521ce512c198a2d8e788dfee5b58cbb1d8d2c9a5e0579cf38791f7177c7335444d5cd56561a9e80ad41f115109               96 testing/Contents-iphoneos-arm64.bz2
- db01d1e660ae819052c41c5f78c395fa03322fa596431a2d887371b08f55a94ab67dba2dd7d487f16cd759e72c8264a3df27a72dc090221cbcaf49b2ee8ad0d7              106 testing/Contents-iphoneos-arm64.gz
+ a9088467394dc53c811fc4ccdd10b71b97f1bebe89de71a8f0dcb9ae8cafc44993fac2f9d4c432caae69cde9e82d78f34506478019b76a6e4332188273f96280              106 testing/Contents-iphoneos-arm64.gz
  3b94028a58cc283813b32e9b770fb01f7ea6b94e490e6159419b7009629d9785d4824dfe333f2dcf73ec4c9e21f35adddca9f3c2adb773ccd8129ddf884ae1cb               89 testing/Contents-iphoneos-arm64.lz4
  c95a7756bcc7abbae2104d4fb978d8c7d04c004751b9629b338f43c4bba1b5de7eb47872070e8afcbb42ed78921ff0e28742527077a0aba14e97b7708e084eaf               84 testing/Contents-iphoneos-arm64.lzma
  ddd05076e8414453bda0848d6ddc7a136081531c7846b140eb26136a924f43f41dcf63bebd43f49e0195622d21566dbae38ac65b41f646098940ec830137e3cf              128 testing/Contents-iphoneos-arm64.xz
  01f48bb6f1d34f3d5111831e193f90355baca1902509d37b95dad7b9ef2a687203854653545ebe106789f6d70e59fa9c867280faaccedb146fdaf98fd49e4440               85 testing/Contents-iphoneos-arm64.zst
  58b3e5d5f29884fa5a8bb244798cd3d182aa01d78faecf9391a4a90240c82cdd5acb02fca025a883c5f468f117ae825eec61960a624abc6598ffd1847f104886              695 testing/binary-iphoneos-arm64/Packages
  41b62776838595cd2f555390780405b7f2704011bc60b75b9b2509529b3528ad36512206261b0b4426100f2f7b9045cbfdc5d153ef1e1a262bd0083875d7904a              497 testing/binary-iphoneos-arm64/Packages.bz2
- 83c6b3e4b60f7e6d390af0560a826c157dcdfdf57775ea6098a929861c52b9fafe875cebc5b6d23e51c90f69d2e1cda5479ffb90a94757084d980ceeb7aefbfd              460 testing/binary-iphoneos-arm64/Packages.gz
+ adb0f8de190b98f41db2ae65568aa61e7364543bd89b76d3c85a471ddd42ba94b7cfb0b4f58dde90462dfe1096f99523f200213626aba3cb63311d502444ecfa              460 testing/binary-iphoneos-arm64/Packages.gz
  e0cb5aa1e96294f63ae7c9fe75d6994c6a70b5ba3b063516585b6c8331bff3232fc07d1694f9c57bd64532725837baa0781615d392eebeb838a7d463d7a83c91              608 testing/binary-iphoneos-arm64/Packages.lz4
  69d5094af35faec41977f07b8ca1b45a81737e36f97ce19e59406349aa142de25647b60991e8a196821264f1ff3aad44fe4cbaf9d6f12e009459f978a0440e45              489 testing/binary-iphoneos-arm64/Packages.lzma
  c1b167af2b8ce0d7a601dafe14c47dbcf575e8b7a2c761538881520d6e292e25c40406b54d28a516fd2f957426ef192d9e3cbaaddeee737638a677794ec13340              536 testing/binary-iphoneos-arm64/Packages.xz
  bfba4dfd13e7d0cb18b1246953e585c284dab6207689f9213bbe66d91634b22f537641361274db85bf47bad7298aa0493e463c4d804b1fe01c6dd24ea0adf67b              453 testing/binary-iphoneos-arm64/Packages.zst
- 351b4378ba77a183bceb98dc13d89acc3e274061287ed551efe575af80d14d90b886554926d68cb1a7a7618293c22247526c2fd599da7e01ea8a2a05c323f9be             3345 testing/binary-iphoneos-arm64/Release
+ 460e281a0c3261351dc2346aee89e10b6fff8331bd616726a71e494c01a24b546a52754c7ef53947bc9797107a6a8847da94901e18c1a8d8b48f76ee764094e1             3345 testing/binary-iphoneos-arm64/Release

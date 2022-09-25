@@ -10,8 +10,6 @@ for dist in main testing; do
 		arch=iphoneos-arm
 	elif [[ "${dist}" == "testing" ]]; then
 		arch=iphoneos-arm64
-	else
-		arch=$(echo "${dist}" | cut -f1 -d '/')
 	fi
 	echo $dist
 	binary=binary-${arch}
