@@ -5,7 +5,7 @@ Priority: optional
 Section: Keyrings
 Maintainer: Porter Hodges <porterhodges@proton.me>
 Installed-Size: 4
-Filename: ./pool/porterhodges-keyring_2022.09.23_all.deb
+Filename: pool/main/main/porterhodges-keyring_2022.09.23_all.deb
 Size: 1158
 MD5sum: a36b7b1ce5070fbe89e54b798f0c048e
 SHA1: 2c7341730bebdd6ccae1e3a6f7609771bdf0d7bf

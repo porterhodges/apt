@@ -5,33 +5,52 @@ cd $(dirname "$0") || exit 1
 FTPARCHIVE='apt-ftparchive'
 GPG_KEY="4BA7226B690A842DB455F7BAF6823E187E05FC64"
 
-echo "[Repository] Deleting old files..."
-rm {Packages{,.xz,.gz,.bz2,.zst},Release{,.gpg}} 2> /dev/null
+for dist in main testing; do
+	if [[ "${dist}" == "main" ]]; then
+		arch=iphoneos-arm
+	elif [[ "${dist}" == "testing" ]]; then
+		arch=iphoneos-arm64
+	else
+		arch=$(echo "${dist}" | cut -f1 -d '/')
+	fi
+	echo $dist
+	binary=binary-${arch}
+	contents=Contents-${arch}
+	mkdir -p dists/${dist}
+	rm -f dists/${dist}/{Release{,.gpg},InRelease}
 
-echo "[Repository] Generating Packages..."
-$FTPARCHIVE packages ./pool > Packages
-    gzip -c9 Packages > Packages.gz
-    xz -c9 Packages > Packages.xz
-    xz -5fkev --format=lzma Packages > Packages.lzma
-    zstd -c19 Packages > Packages.zst
-    bzip2 -c9 Packages > Packages.bz2  
-    lz4 -c9 Packages > Packages.lz4
+	cp -a CydiaIcon*.png dists/${dist}
 
-echo "[Repository] Generating Contents..."
-$FTPARCHIVE contents ./pool > Contents-iphoneos-arm
-    bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
-    xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
-    xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma
-    lz4 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.lz4
-    gzip -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.gz
-    zstd -c19 Contents-iphoneos-arm > Contents-iphoneos-arm.zst
-$FTPARCHIVE release -c ./config/iphoneos-arm64.conf . > Release
+	for comp in main testing; do
+		if [ ! -d pool/${comp}/${dist} ]; then
+			continue;
+		fi
+		mkdir -p dists/${dist}/${comp}/${binary}
+		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.gz,.bz2,.zst},Release{,.gpg},InRelease}
 
-echo "[Repository] Signing..."
-gpg -vabs -u $GPG_KEY -o Release.gpg Release
-echo "[Repository] Generated detached signature"
-gpg --clear-sign -u $GPG_KEY -o InRelease Release
-echo "[Repository] Generated in-line signature"
+		$FTPARCHIVE packages pool/${comp}/${dist} > \
+			dists/${dist}/${comp}/${binary}/Packages 2>/dev/null
+		xz -c9 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.xz
+        xz -5fkev --format=lzma dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.lzma
+		zstd -q -c19 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.zst
+        gzip -c9 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.gz
+        bzip2 -c9 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.bz2
+        lz4 -c9 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.lz4
 
-echo "[Repository] Done"
+		$FTPARCHIVE contents pool/${comp}/${dist} > \
+			dists/${dist}/${comp}/${contents}
+		xz -c9 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.xz
+        xz -5fkev --format=lzma dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.lzma
+		zstd -q -c19 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.zst
+        gzip -c9 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.gz
+        bzip2 -c9 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.bz2
+        lz4 -c9 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.lz4
+
+		$FTPARCHIVE release -c config/${arch}-basic.conf dists/${dist}/${comp}/${binary} > dists/${dist}/${comp}/${binary}/Release 2>/dev/null
+	done
+
+	$FTPARCHIVE release -c config/$(echo "${dist}" | cut -f1 -d '/').conf dists/${dist} > dists/${dist}/Release 2>/dev/null
+
+	gpg -vabs -u $GPG_KEY -o dists/${dist}/Release.gpg dists/${dist}/Release
+	gpg --clear-sign -u $GPG_KEY -o dists/${dist}/InRelease dists/${dist}/Release
 done
